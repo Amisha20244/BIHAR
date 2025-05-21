@@ -1,0 +1,228 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* space for fixed navbar */
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  padding: 12px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER */
+header {
+  background:black;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+/* SECTION WRAPPER */
+.section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* SECTION HEADINGS */
+.section h2 {
+  color:black;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ABOUT TEXT */
+.about-text {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+  color: #444;
+}
+
+/* FESTIVALS GRID */
+.festivals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* FESTIVAL CARD */
+.festival-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.festival-card:hover {
+  transform: scale(1.02);
+}
+
+.festival-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.festival-card h3 {
+  color: #b30000;
+  margin: 15px;
+  font-size: 1.3rem;
+}
+
+.festival-card p {
+  padding: 0 15px 15px;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: justify;
+}
+
+.know-more-btn {
+  display: inline-block;
+  margin: 0 15px 20px;
+  padding: 8px 15px;
+  background-color: #b30000;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.know-more-btn:hover {
+  background-color: #8c0000;
+}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav a {
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+
+  .festival-card h3 {
+    font-size: 1.1rem;
+  }
+}
+.festival-card {
+  background-color: #fff8f0;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.festival-card:hover {
+  transform: scale(1.03);
+}
+
+.festival-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.festival-card h2 {
+  font-size: 1.4rem;
+  margin: 15px;
+  color: #800000;
+}
+
+.festival-card p {
+  font-size: 1rem;
+  padding: 0 15px 15px 15px;
+  color: #444;
+}
+
+.know-more-btn {
+  display: block;
+  text-align: center;
+  margin: 10px 15px 20px;
+  padding: 8px 15px;
+  background-color: #800000;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #a00000;
+}
+
+/* Footer CSS */
+footer {
+  /* position: fixed;       पेज के नीचे फिक्स करने के लिए */
+  bottom: 0;             /* नीचे से 0 पिक्सल */
+  left: 0;               /* बाएं से 0 पिक्सल */
+  width: 100%;           /* पूरी चौड़ाई */
+  background-color: #222; /* डार्क बैकग्राउंड */
+  color: white;          /* टेक्स्ट सफेद */
+  text-align: center;    /* टेक्स्ट केंद्र में */
+  padding: 15px 0;       /* ऊपर नीचे padding */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* हल्का छाया */
+  z-index: 1000;         /* ऊपर रहना चाहिए */
+  font-family: Arial, sans-serif;
+}
+
+/* Footer के अंदर लिंक */
+.footer-nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ffcc00; /* होवर पर रंग बदल जाए */
+}
+
+/* सोशल आइकन */
+.social-links a img {
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+/* पैराग्राफ के लिए थोड़ा स्पेस */
+footer p {
+  margin: 8px 0 0 0;
+  font-size: 13px;
+  color: #ccc;
+}
